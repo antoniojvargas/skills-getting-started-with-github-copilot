@@ -12,7 +12,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #e3f2fd; /* Cambiar a un azul claro */
 }
 
 header {
@@ -22,6 +22,7 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra */
 }
 
 header h1 {
@@ -31,7 +32,7 @@ header h1 {
 main {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px; /* Reducir el espacio entre elementos */
   justify-content: center;
 }
 
@@ -48,6 +49,12 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Añadir transición */
+}
+
+section:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 section h3 {
@@ -72,6 +79,18 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #555;
+}
+
+.activity-card ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .form-group {
@@ -102,10 +121,12 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añadir sombra */
 }
 
 button:hover {
   background-color: #3949ab;
+  transform: scale(1.05); /* Efecto de agrandamiento */
 }
 
 .message {
@@ -139,6 +160,31 @@ button:hover {
 footer {
   text-align: center;
   margin-top: 30px;
-  padding: 20px;
+  padding: 15px; /* Ajustar padding */
   color: #666;
+  font-size: 14px; /* Reducir tamaño de fuente */
+  background-color: #f1f1f1; /* Fondo gris claro */
+  border-top: 1px solid #ddd; /* Añadir borde superior */
+}
+
+.participant-info {
+  background-color: #fff3e0; /* Fondo naranja claro */
+  border: 1px solid #ffcc80; /* Borde naranja */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #e65100; /* Texto naranja oscuro */
+}
+
+.participant-info h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #bf360c; /* Título más oscuro */
+}
+
+.participant-info p {
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
